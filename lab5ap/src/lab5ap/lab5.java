@@ -117,7 +117,7 @@ bstorder =new ArrayList<Object>();
     		}
     		out+=a;
     	}
-    	if(found){
+    	if(found&& cfinal<=n){
     		stu.get(cfinal).add(out);
     	}
     	}
@@ -144,7 +144,8 @@ bstorder =new ArrayList<Object>();
     			}
     			sum+=(float)a;
     		}	
-    		if(found){
+    		//System.out.println("ccc"+cfinal+"   "+n);
+    		if(found&& cfinal<=n){
     			stu.get(cfinal).add(sum);
     		}
     		//System.out.println(sum);
@@ -170,7 +171,7 @@ bstorder =new ArrayList<Object>();
     			}
     			sum+=(int)a;
     		}	
-    		if(found){
+    		if(found && cfinal<=n){
     			stu.get(cfinal).add(sum);
     		}
     		//System.out.println(sum);
